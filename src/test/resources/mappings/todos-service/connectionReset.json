@@ -1,0 +1,17 @@
+{
+  "id" : "d9c0f8b7-7c41-47fd-a364-b7bd2f9b3cc3",
+  "request" : {
+    "url" : "/todos-service/todos/connection-reset",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "delayDistribution" : {
+      "type" : "uniform",
+      "lower" : 20,
+      "upper" : 100
+    },
+    "fault" : "CONNECTION_RESET_BY_PEER"
+  },
+  "uuid" : "d9c0f8b7-7c41-47fd-a364-b7bd2f9b3cc3"
+}

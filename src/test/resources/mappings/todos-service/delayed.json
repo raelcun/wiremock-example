@@ -1,0 +1,20 @@
+{
+  "id" : "69ad84cd-e0ec-4a93-9b09-947c9f65c6cb",
+  "request" : {
+    "url" : "/todos-service/todos/delayed",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"userId\":\"1\",\"id\":\"1\",\"title\":\"et porro tempora\",\"completed\":true}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "delayDistribution" : {
+      "type" : "uniform",
+      "lower" : 20,
+      "upper" : 100
+    }
+  },
+  "uuid" : "69ad84cd-e0ec-4a93-9b09-947c9f65c6cb"
+}

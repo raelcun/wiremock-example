@@ -1,0 +1,15 @@
+{
+  "id" : "8a8984eb-faf2-4062-94b9-252735abac06",
+  "request" : {
+    "url" : "/todos-service/todos/success",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"userId\":\"1\",\"id\":\"1\",\"title\":\"foobar\",\"completed\":true}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8a8984eb-faf2-4062-94b9-252735abac06"
+}
