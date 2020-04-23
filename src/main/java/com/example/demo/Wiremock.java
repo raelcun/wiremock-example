@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
@@ -13,10 +14,10 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 public class Wiremock implements DisposableBean {
     private final WireMockServer server;
 
-    @Value("${mock.server.port}")
-    private int port;
-
-    public Wiremock() {
+    @Autowired
+    public Wiremock(
+            @Value("${mock.server.port}") int port
+    ) {
         server = new WireMockServer(
                 options()
                         .port(port)
